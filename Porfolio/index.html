@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>DOCUMENT</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a50bd1aa2b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </div>
+  </div>
+
+  <div id="cover-image">
+    <div class="container">
+      <div class="header-text">
+        <h1>Hi, I'm <span>Trevor</span> <Br></h1>
+        <p>Mechanical Engineer</p>
+      </div>
+    </div>
+  </div>
+
+  <!--------about-------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.jpeg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hi, I'm Trevor and am a mechanical engineering student graduating from California State University Chico in
+            May 2023.
+            I have work experience in machining and 3D Design (Fusion 360 and SolidWorks) both at a Petaluma Startup,
+            Zomes, and
+            through vibrations research I've done in partnership with one of my professors and the university itself.
+            See my attached
+            resume for more information about my work experience.
+            <br>
+            <br>
+            In my free time I enjoy a variety of hobbies including lockpicking, climbing, Spikeball, and guitar. I also
+            enjoy playing
+            video games to connect with friends who have moved away and can't be met in person. I also have developed a
+            passion cooking
+            (although I need practice) and am an avid 49ers football fan.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>CAD, Drawings, and GD&T</span><br>CSWP certified in SolidWorks, also familiar with Fusion360 and
+                ANSYS</li>
+              <li><span>Project Management</span><br>Project manager for capstone design, responsible for Gantt chart in
+                MS Project, alocating tasks to team, and coordinating with the sponsor, Medtronic</li>
+              <li><span>Sustainable Manufacturing</span><br>A firm understanding of manufacturing processes learned
+                through both school cariculum and internships</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2022 - Present</span><br>Research Technician at CSU Chico</li>
+              <li><span>Summer 2021</span><br>Mechanical Engineering Intern at Zomes</li>
+              <li><span>2019-2020</span><br>IT Support Admin at MVLA School District</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>May 2023</span><br>B.S. in Mechanical Engineering earning honors in the major at California
+                State University, Chico</li>
+              <li><span>2022</span><br>ACE Metrology course earning certificate of completion</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!---Portfolio-->
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.jpg">
+          <div class="layer">
+            <h3>Coffee Grinder</h3>
+            <p>In a group with three other students, we compeeted in a coffee grinder
+              design and fabrication competition (we won). The project itself was open-ended with the only requirements
+              being the use of the provided bevel gears and burr and grinder. We used a series of methods including
+              manual turning on a lathe, CNC machining, and 3d printing. The system was designed in SolidWorks
+              complimented by a full technical writeup accompanied by individual part drawings.</p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.jpg">
+          <div class="layer">
+            <h3>Pin Tumbler Lock</h3>
+            <p>One of my hobbies is lockpicking so when I was assigned the task of reverse engineering an assembly with
+              at least five parts I decided that a 30+ part traditional pin and tumbler lock made the most sense. I
+              meticulously disassembled and measured each feature with calipers to bring it to life in SolidWorks. I
+              chose to model it after a practice lock for novice lock pickers so that someone unfamiliar with locks
+              can easily see the internals. SolidWorks FEA was used to simulate common types of brute force attacks used
+              on locks (Eg. bolt cutters or shearing the locking lugs).</p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.jpg">
+          <div class="layer">
+            <h3>Hoist Winch</h3>
+            <p>As part of the manufacturing processes class, I was tasked with the fabrication of a hoist winch. The
+              hoist winch was selected due to the wide variety of manufacturing methods required for the multitude of
+              parts. The methods include but are not limited to: casting, manual mill, bending, acetylene torch,
+              hydraulic punch, manual lathe, and CNC. One particularly challenging aspect was that I was forced to cut
+              threads manually on the lathe as opposed to a tap/die set. After cutting one set of threads we walked over
+              and ran the CNC to do the other side of threads much quicker and cleaner. When completed the
+              hoist winch is certified for a 1.0 kip vertical load or 1.5 kip horizontal load.</p>
+          </div>
+        </div>
+      </div>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-4.jpg">
+          <div class="layer">
+            <h3>Iris Mechanism</h3>
+            <p>This iris mechanism is a small project I did in my free time outside of classes. The mechanism itself is
+              my own design, I've seen people use similar mechanisms for novelty ring boxes. I decided to try and design
+              my own take on the mechanism because of how alluring the movement was. I sketched it, designed it in
+              SolidWorks, and once it cools down (it's 115 in Chico over the summer) 3d print it. Eventually, I would
+              like to integrate my design into something practical and fabricate the mechanism out of high-quality
+              materials as opposed to the cheapest PLA money can buy.</p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-5.jpg">
+          <div class="layer">
+            <h3>Trebuchet</h3>
+            <p>The trebuchet was a fever dream that I undertook with a few of my friends. I was the lead “engineer” on
+              the project. We bought some supplies and used my dad's tools to
+              construct this 15-foot wooden monstrosity. We built it in my driveway and proceed to carry it about a mile
+              to a local middle school in the dead of night. The first two launches were moderately successful hurtling
+              a tennis ball which I have to assume was traveling over Mach 3 over half the length of a soccer field.
+              Tragically on the third launch, the trebuchet realized that it was too powerful for our world and
+              self-destructed. The lesson here is one of planning, though I must note a well-planned, well-executed
+              trebuchet would have taken much longer and been substantially less fun for my friends who are not
+              engineering inclined. </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-6.jpg">
+          <div class="layer">
+            <h3>Classical Guitar</h3>
+            <p>I took classical guitar lessons for 10 years starting at the age of 8, since then I’ve kept up learning
+              new songs and playing when I have the time and it has become one of my favorite hobbies. The link below
+              sends
+              you to my YouTube channel where I’ve posted to showcase my ability. While classical guitar is inherently a
+              challenging skill in itself to learn, I would argue the more impressive feat is the time dedicated.<br>See
+              video attached. </p>
+            <a href="https://youtu.be/hcvS74nFTdY"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!---CONTACT-->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> trevorlf2001@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i> (650) 305-1281</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/tfolden/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UCQKzX9YHA9EE7MBUMx8Rj5g"><i
+                class="fa-brands fa-square-youtube"></i></i></a>
+            <a href="https://github.com/trevor-folden"><i class="fa-brands fa-square-github"></i></i></a>
+            <a href="https://shanefolden.com/"><i class="fa-sharp fa-solid fa-jedi"></i></i></a>
+          </div>
+          <a href="images/my-cv.pdf" class="btn btn2" download="my-cv.pdf">View Resume</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="email" placeholder="your email" required>
+            <textarea name="message" rows="6" placeholder="Your message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © TrevorFolden inc. (not really please dont rip my site)</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link")
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab")
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab")
+    }
+  </script>
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu() {
+      sidemenu.style.right = "0"
+    }
+
+    function closemenu() {
+      sidemenu.style.right = "-200px"
+    }
+  </script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxjazKBjrGZvJu-qmRYfkb8fErzXWfwtORPo3lMfBBn2uBobMCgApQxaTXs4BMrXNhB/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message Succesful"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 4000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
